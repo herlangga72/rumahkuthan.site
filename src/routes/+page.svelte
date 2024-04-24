@@ -20,7 +20,6 @@
     </div>
 </div>
 
-<!-- Create A pagination -->
 <div class="container mx-auto px-4 py-8">
     <div class="flex justify-center gap-3">
         {#if data.hasPrevious}
