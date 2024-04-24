@@ -14,7 +14,7 @@
                 <div class="p-4">
                     <h1 class="text-2xl font-bold text-gray-800">{item.keterangan}</h1>
                     <p class="mt-2 text-gray-600">{item.keterangan}</p>
-                    <a href={imageUrl} download={item.keterangan} class="px-4 py-2 bg-blue-500 text-white rounded-lg">Download</a>
+                    <a href={imageUrl} download class="px-4 py-2 bg-blue-500 text-white rounded-lg">Download</a>
                 </div>
             </div>
         {/each}
