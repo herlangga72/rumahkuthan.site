@@ -1,7 +1,6 @@
 <script>
     /** @type {import('./$types').PageData} */
     export let data;
-    let showModal = false;
 </script>
 
 <!-- make a content container for page -->
@@ -12,7 +11,7 @@
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
                 <img class="w-full h-56 object-cover object-top" src="{imageUrl}?thumb=0x360" alt={item.keterangan} />
                 <div class="p-4">
-                    <h1 class="text-2xl font-bold text-gray-800">{item.keterangan}</h1>
+                    <h1 class="text-2xl font-bold text-gray-800">{item.gambar}</h1>
                     <p class="mt-2 text-gray-600">{item.keterangan}</p>
                     <a href={imageUrl} download class="px-4 py-2 bg-blue-500 text-white rounded-lg">Download</a>
                 </div>
