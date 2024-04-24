@@ -2,17 +2,6 @@
     /** @type {import('./$types').PageData} */
     export let data;
     let showModal = false;
-    let selectedImage = '';
-
-    function openModal(imageUrl) {
-        selectedImage = imageUrl;
-        showModal = true;
-    }
-
-    function closeModal() {
-        showModal = false;
-    }
-    console.log(data);
 </script>
 
 <!-- make a content container for page -->
@@ -25,22 +14,13 @@
                 <div class="p-4">
                     <h1 class="text-2xl font-bold text-gray-800">{item.keterangan}</h1>
                     <p class="mt-2 text-gray-600">{item.keterangan}</p>
-                    <button on:click={() => openModal(imageUrl)}>View Full Resolution</button>
+                    <a href={imageUrl} download={item.keterangan} class="px-4 py-2 bg-blue-500 text-white rounded-lg">Download</a>
                 </div>
             </div>
         {/each}
     </div>
 </div>
 
-{#if showModal}
-    <div class="fixed inset-0 flex items-center justify-center z-50">
-        <div class="bg-white p-4">
-            <img class="w-full" src={selectedImage} alt="Full Resolution Image" />
-            <button on:click={closeModal}>Close</button>
-        </div>
-    </div>
-{/if}
-            
 <!-- Create A pagination -->
 <div class="container mx-auto px-4 py-8">
     <div class="flex justify-center gap-3">

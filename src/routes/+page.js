@@ -6,7 +6,7 @@ export async function load({params, url}) {
     // create a paginated list of records
     
     const pb = new PocketBase('https://rumahkuthan.site');
-    const pageSize = 10;
+    const pageSize = 12;
     const page = url.searchParams.get('page') || 0;
     const pageNumber = parseInt(page)
     const sortOptions = {
