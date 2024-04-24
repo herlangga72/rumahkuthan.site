@@ -10,7 +10,7 @@
         {#each data.result.items as item}
             {@const imageUrl = `https://rumahkuthan.site/api/files/${item.collectionId}/${item.id}/${item.gambar}`}
             <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img class="w-full h-56 object-cover object-center" src="{imageUrl}?thumb=0x360" alt={item.keterangan} />
+                <img class="w-full h-56 object-cover object-top" src="{imageUrl}?thumb=0x360" alt={item.keterangan} />
                 <div class="p-4">
                     <h1 class="text-2xl font-bold text-gray-800">{item.keterangan}</h1>
                     <p class="mt-2 text-gray-600">{item.keterangan}</p>
